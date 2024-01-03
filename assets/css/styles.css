@@ -190,7 +190,7 @@ main{
 }
 
 .row-second-player1{
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     position: absolute;
     top: 140px;
     left: 70px;
@@ -203,13 +203,14 @@ main{
 }
 
 .row-second-player3{
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: absolute;
     bottom: 140px;
     right: 70px;
 }
 
 .row-second-player4{
+    transform: rotate(180deg);
     position: absolute;
     bottom: 0;
     right: 350px;
