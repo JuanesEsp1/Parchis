@@ -124,14 +124,6 @@ main{
     border: 1px grey solid;
 }
 
-.row-middle{
-    height: 70px;
-    width: 70px;
-    position: relative;
-    top: 210px;
-    left: 210px;
-}
-
 .row-base-player1{
     position: absolute;
     top: 0;
@@ -224,5 +216,33 @@ main{
 }
 
 .row-middle{
+    height: 70px;
+    width: 70px;
+}
 
+.row-middle-player1{
+    position: absolute;
+    top: 210px;
+    left: 210px;
+}
+
+.row-middle-player2{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 210px;
+    right: 210px;
+}
+
+.row-middle-player3{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 210px;
+    right: 210px;
+}
+
+.row-middle-player4{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 210px;
+    left: 210px;
 }
