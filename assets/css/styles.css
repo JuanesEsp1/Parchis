@@ -34,7 +34,9 @@ main{
 .spot{
     width: 210px;
     height: 210px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .spot-player1{
@@ -63,6 +65,13 @@ main{
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.spot-container{
+    width: 190px;
+    height: 190px;
+    background-color: rgba(34, 47, 62,0.2);
+    border-radius: 20px;
 }
 
 
