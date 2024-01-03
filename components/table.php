@@ -2,7 +2,8 @@
 
 <?php
 require("spots.php");
-require("rows.php");
+require("rowsStart.php");
+require("rowsFinal.php");
 ?>
 
 

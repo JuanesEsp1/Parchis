@@ -132,4 +132,37 @@ main{
     
 }
 
+.row-final-player1{
+    background-color: var(--color-player-1);
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 280px;
+}
 
+.row-final-player2{
+    transform: rotate(90deg);
+    background-color: var(--color-player-2);
+    height: 240px;
+    position: absolute;
+    top: 195px;
+    right: 85px;
+}
+
+.row-final-player3{
+    transform: rotate(180deg);
+    background-color: var(--color-player-3);
+    height: 240px;
+    position: absolute;
+    bottom: 0;
+    right: 280px;
+}
+
+.row-final-player4{
+    transform: rotate(-90deg);
+    background-color: var(--color-player-4);
+    height: 240px;
+    position: absolute;
+    bottom: 195px;
+    left: 85px;
+}
