@@ -6,6 +6,7 @@ require("rowsStart.php");
 require("rowsFinal.php");
 require("rowsSecond.php");
 require("rowsMiddle.php");
+require("arrival.php");
 ?>
 
 

@@ -103,7 +103,7 @@ main{
 }
 
 .field-security{
-    background-color: grey;
+    background-color: #b2bec3;
 }
 
 .field-triangular1{
@@ -246,4 +246,14 @@ main{
     position: absolute;
     bottom: 210px;
     left: 210px;
+}
+
+.arrival{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
