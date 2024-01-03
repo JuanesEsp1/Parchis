@@ -102,6 +102,11 @@ main{
     background-color: var(--color-player-4);
 }
 
+.field-security{
+    background-color: grey;
+}
+
+
 .row-base-player1{
     position: absolute;
     top: 0;
@@ -165,4 +170,30 @@ main{
     position: absolute;
     bottom: 195px;
     left: 85px;
+}
+
+.row-second-player1{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 140px;
+    left: 70px;
+}
+
+.row-second-player2{
+    position: absolute;
+    top: 0;
+    left: 350px;
+}
+
+.row-second-player3{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 140px;
+    right: 70px;
+}
+
+.row-second-player4{
+    position: absolute;
+    bottom: 0;
+    right: 350px;
 }
