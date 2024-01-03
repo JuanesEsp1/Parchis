@@ -106,6 +106,31 @@ main{
     background-color: grey;
 }
 
+.field-triangular1{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    background-color: #fff;
+    border: 1px grey solid;
+}
+
+.field-triangular2{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+    background-color: #fff;
+    border: 1px grey solid;
+}
+
+.row-middle{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 210px;
+    left: 210px;
+}
 
 .row-base-player1{
     position: absolute;
@@ -196,4 +221,8 @@ main{
     position: absolute;
     bottom: 0;
     right: 350px;
+}
+
+.row-middle{
+
 }
