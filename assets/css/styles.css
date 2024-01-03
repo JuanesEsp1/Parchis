@@ -74,4 +74,62 @@ main{
     border-radius: 20px;
 }
 
+.row-base{
+    width: 70px;
+    height: 210px;
+    background-color: #fff;
+}
+
+.field{
+    width: 70px;
+    height: 30px;
+    border: 1px solid grey; 
+}
+
+.field-player1{
+    background-color: var(--color-player-1);
+}
+
+.field-player2{
+    background-color: var(--color-player-2);
+}
+
+.field-player3{
+    background-color: var(--color-player-3);
+}
+
+.field-player4{
+    background-color: var(--color-player-4);
+}
+
+.row-base-player1{
+    position: absolute;
+    top: 0;
+    left: 210px;
+}
+
+.row-base-player2{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 140px;
+    right: 70px;
+    
+}
+
+.row-base-player3{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    right: 210px;
+    
+}
+
+.row-base-player4{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 140px;
+    left: 70px;
+    
+}
+
 
