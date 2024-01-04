@@ -84,6 +84,8 @@ main{
     width: 70px;
     height: 30px;
     border: 1px solid grey; 
+    display: flex;
+    justify-content: center;
 }
 
 .field-player1{
@@ -356,6 +358,59 @@ main{
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
+  }
+
+  .plano{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .figurePlayer1{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-player-1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 0px rgba(52, 73, 94,0.9); 
+  }
+
+  .figurePlayer2{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-player-2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 0px rgba(52, 73, 94,0.9); 
+  }
+
+  .figurePlayer3{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-player-3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 0px rgba(52, 73, 94,0.9); 
+  }
+
+  .figurePlayer4{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-player-4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 0px rgba(52, 73, 94,0.9); 
   }
 
 

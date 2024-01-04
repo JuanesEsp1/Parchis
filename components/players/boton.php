@@ -1,2 +1,2 @@
-<button id="btnPush">Push</button>
+<button id="btnPush" onclick="crapsPush()">Push</button>
 

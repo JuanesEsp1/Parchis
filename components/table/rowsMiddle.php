@@ -1,8 +1,10 @@
 <div class="row-middle row-middle-player1">
-    <div class="field-triangular1">
+    <div id="fiel8" class="field-triangular1">
+        8
     </div>
 
-    <div class="field-triangular2">   
+    <div id="fiel9" class="field-triangular2"> 
+        9  
     </div>
 </div>
 
