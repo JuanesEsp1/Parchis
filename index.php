@@ -14,8 +14,8 @@
 
       <div id="parchis">
          <?php
-            require("components/table.php");
-            require("components/player.php");
+            require("views/table.php");
+            require("views/player.php");
          ?>
       </div>
 

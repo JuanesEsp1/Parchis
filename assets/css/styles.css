@@ -297,3 +297,53 @@ main{
     width: 75px;
     clip-path: polygon(0% 0%, 0%  100%, 100% 50%);
 }
+
+/*Termina el css del tablero*/
+
+#player{
+    width: 240px;
+    height: 630px;
+    background-color: #3c6382;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow{
+    width: 220px;
+    height: 610px;
+    background-color: rgba(34, 47, 62,0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+#dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dado{
+    margin: 17px;
+}
+
+#btnPush{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    left: 23px;
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #f1f2f6;
+}
+
+#btnPush:hover{
+    background-color: #fff;
+    background: linear-gradient(#dfdfdf, #ededed);
+}
+
+
+
