@@ -118,7 +118,7 @@ main{
 }
 
 .field-triangular2{
-    position: absolute;
+    position: relative;
     height: 70px;
     width: 70px;
     clip-path: polygon(0 100%, 100% 100%, 0 0);
@@ -412,5 +412,21 @@ main{
     align-items: center;
     box-shadow: inset 0px 0px 10px 0px rgba(52, 73, 94,0.9); 
   }
+
+.rotate-90{
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.rotate{
+    transform: rotate(-90deg);
+    position: relative;
+}
+
+.middle-player1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 

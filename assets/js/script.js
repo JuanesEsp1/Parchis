@@ -19,8 +19,8 @@ const crapsPush = () =>{
    renderImg(1,num1);
    renderImg(2,num2);
 
-   $("#fiel"+num1).html(figurePlayer3);
-   $("#fiel"+valueAnt).html(valueAnt);
+   $("#field"+num1).html(figurePlayer3);
+   $("#field"+valueAnt).html(valueAnt);
    valueAnt = num1;
    
    console.log(isPair(num1,num2));
