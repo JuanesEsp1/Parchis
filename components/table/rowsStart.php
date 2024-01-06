@@ -11,7 +11,7 @@
 <div class="row-base row-base-player2">
     <div id="field48" class="field"><div class="rotate">48</div></div>
     <div id="field49" class="field"><div class="rotate">49</div></div>
-    <div id="field450" class="field"><div class="rotate">50</div></div>
+    <div id="field50" class="field"><div class="rotate">50</div></div>
     <div id="field51" class="field"><div class="rotate">51</div></div>
     <div id="field52" class="field field-player2"><div class="rotate">52</div></div>
     <div id="field53" class="field"><div class="rotate">53</div></div>
@@ -29,11 +29,11 @@
 </div>
 
 <div class="row-base row-base-player4">
-    <div id="fiel18" class="field"><div class="rotate-90">14</div></div>
-    <div id="fiel19" class="field"><div class="rotate-90">15</div></div>
-    <div id="fiel20" class="field"><div class="rotate-90">16</div></div>
-    <div id="fiel21" class="field"><div class="rotate-90">17</div></div>
-    <div id="fiel22" class="field field-player4"><div class="rotate-90">18</div></div>
-    <div id="fiel23" class="field"><div class="rotate-90">19</div></div>
-    <div id="fiel24" class="field"><div class="rotate-90">20</div></div>
+    <div id="field14" class="field"><div class="rotate-90">14</div></div>
+    <div id="field15" class="field"><div class="rotate-90">15</div></div>
+    <div id="field16" class="field"><div class="rotate-90">16</div></div>
+    <div id="field17" class="field"><div class="rotate-90">17</div></div>
+    <div id="field18" class="field field-player4"><div class="rotate-90">18</div></div>
+    <div id="field19" class="field"><div class="rotate-90">19</div></div>
+    <div id="field20" class="field"><div class="rotate-90">20</div></div>
 </div>
