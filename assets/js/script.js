@@ -16,12 +16,7 @@ const getNum = ()=>{
 const crapsPush = () =>{
     getTurn();
     
-    /*
-    let element = $('[player1="2"]');
-    element.html('xxx');
-    let id = element.attr('id');
-    console.log(id);
-    */
+    
 }
 
 const dbStatus = () => {
@@ -40,13 +35,17 @@ const dbStatus = () => {
 const startGame = () => {
     localStorage.setItem("status",true);
     localStorage.setItem("positionInitialPlayer1",0);
-    localStorage.setItem("positionNowPlayer1",false);
+    localStorage.setItem("positionNowPlayer1",0);
+    localStorage.setItem("positionAntPlayer1",0);
     localStorage.setItem("positionInitialPlayer2",51);
-    localStorage.setItem("positionNowPlayer2",false);
+    localStorage.setItem("positionNowPlayer2",0);
+    localStorage.setItem("positionAntPlayer2",0);
     localStorage.setItem("positionInitialPlayer3",34);
-    localStorage.setItem("positionNowPlayer3",false);
+    localStorage.setItem("positionNowPlayer3",0);
+    localStorage.setItem("positionAntPlayer3",0);
     localStorage.setItem("positionInitialPlayer4",17);
-    localStorage.setItem("positionNowPlayer4",false);
+    localStorage.setItem("positionNowPlayer4",0);
+    localStorage.setItem("positionAntPlayer4",0);
     localStorage.setItem("turn",1);
 }
 
@@ -104,59 +103,65 @@ const turnPlayer1 = () =>{
 const turnPlayer2 = () =>{
     console.log("turno  player 2");
     localStorage.setItem("turn",3);
-
     let num1 =  getNum();
     let num2 =  getNum();
-
     renderImg(1,num1);
     renderImg(2,num2);
-
-    localStorage.setItem("positionNowPlayer2",parseInt(localStorage.getItem("positionInitialPlayer2"))+num1+num2);
-
-    $("#field"+parseInt(localStorage.getItem("positionNowPlayer2"))).html(figurePlayer2);
-    $("#field"+valueAnt).html(valueAnt);
-    valueAnt=parseInt(localStorage.getItem("positionNowPlayer2"));
-    localStorage.setItem("positionInitialPlayer2",parseInt(localStorage.getItem("positionNowPlayer2")));
-
-    console.log(valueAnt);
+    let dados = num1+num2;
+    console.log("==========================");
+    console.log("valor de los dados: "+dados);
+    let positionActual = parseInt(localStorage.getItem("positionNowPlayer2"));
+    console.log("==========================");
+    console.log("position actual: "+positionActual);
+    let newPosition    =  positionActual+dados; 
+    console.log("==========================");
+    console.log("nueva posicion: "+newPosition);
+    $('[player2="'+positionActual+'"]').html('');
+    $('[player2="'+newPosition+'"]').html(figurePlayer2);
+    localStorage.setItem("positionNowPlayer2",newPosition);
+    console.log("==========================");
 }
 
 const turnPlayer3 = () =>{
     console.log("turno  player 3");
     localStorage.setItem("turn",4);
-
     let num1 =  getNum();
     let num2 =  getNum();
-
     renderImg(1,num1);
     renderImg(2,num2);
-
-    localStorage.setItem("positionNowPlayer3",parseInt(localStorage.getItem("positionInitialPlayer3"))+num1+num2);
-
-    $("#field"+parseInt(localStorage.getItem("positionNowPlayer3"))).html(figurePlayer3);
-    $("#field"+valueAnt).html(valueAnt);
-    valueAnt=parseInt(localStorage.getItem("positionNowPlayer3"));
-    localStorage.setItem("positionInitialPlayer3",parseInt(localStorage.getItem("positionNowPlayer3")));
-
-    console.log(valueAnt);
+    let dados = num1+num2;
+    console.log("==========================");
+    console.log("valor de los dados: "+dados);
+    let positionActual = parseInt(localStorage.getItem("positionNowPlayer3"));
+    console.log("==========================");
+    console.log("position actual: "+positionActual);
+    let newPosition    =  positionActual+dados; 
+    console.log("==========================");
+    console.log("nueva posicion: "+newPosition);
+    $('[player3="'+positionActual+'"]').html('');
+    $('[player3="'+newPosition+'"]').html(figurePlayer3);
+    localStorage.setItem("positionNowPlayer3",newPosition);
+    console.log("==========================");
 }
 
 const turnPlayer4 = () =>{
     console.log("turno  player 4");
     localStorage.setItem("turn",1);
-
     let num1 =  getNum();
     let num2 =  getNum();
-
     renderImg(1,num1);
     renderImg(2,num2);
-
-    localStorage.setItem("positionNowPlayer4",parseInt(localStorage.getItem("positionInitialPlayer4"))+num1+num2);
-
-    $("#field"+parseInt(localStorage.getItem("positionNowPlayer4"))).html(figurePlayer4);
-    $("#field"+valueAnt).html(valueAnt);
-    valueAnt=parseInt(localStorage.getItem("positionNowPlayer4"));
-    localStorage.setItem("positionInitialPlayer4",parseInt(localStorage.getItem("positionNowPlayer4")));
-
-    console.log(valueAnt);
+    let dados = num1+num2;
+    console.log("==========================");
+    console.log("valor de los dados: "+dados);
+    let positionActual = parseInt(localStorage.getItem("positionNowPlayer4"));
+    console.log("==========================");
+    console.log("position actual: "+positionActual);
+    let newPosition    =  positionActual+dados; 
+    console.log("==========================");
+    console.log("nueva posicion: "+newPosition);
+    $('[player4="'+positionActual+'"]').html('');
+    $('[player4="'+newPosition+'"]').html(figurePlayer4);
+    localStorage.setItem("positionNowPlayer4",newPosition);
+    console.log("==========================");
 }
