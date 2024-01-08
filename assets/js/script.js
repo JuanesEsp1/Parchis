@@ -14,12 +14,14 @@ const getNum = ()=>{
 }
 
 const crapsPush = () =>{
-    //getTurn();
-
+    getTurn();
+    
+    /*
     let element = $('[player1="2"]');
     element.html('xxx');
     let id = element.attr('id');
     console.log(id);
+    */
 }
 
 const dbStatus = () => {

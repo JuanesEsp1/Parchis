@@ -425,8 +425,62 @@ main{
 
 .middle-player1-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: 30px;
 }
 
+.middle-player1-2{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 8px;
+}
 
+.middle-player2-1{
+    display: flex;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 4px;
+    right: 30px;
+}
+
+.middle-player2-2{
+    display: flex;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 25px;
+    left: 4px;
+}
+
+.middle-player3-1{
+    display: flex;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 4px;
+    right: 27px;
+}
+
+.middle-player3-2{
+    display: flex;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
+
+.middle-player4-1{
+    display: flex;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.middle-player4-2{
+    display: flex;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 25px;
+    left: 5px;
+}
