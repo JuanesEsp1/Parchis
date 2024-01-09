@@ -5,11 +5,6 @@
 </div>
 
 
-<div class="plano">
 
- <div class="figurePlayer1"></div>
-
-
-</div>
 
 

@@ -300,6 +300,7 @@ main{
     clip-path: polygon(0% 0%, 0%  100%, 100% 50%);
 }
 
+
 /*Termina el css del tablero*/
 
 #player{
@@ -483,4 +484,33 @@ main{
     position: absolute;
     top: 25px;
     left: 5px;
+}
+
+
+.arrival-player1-1{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 69px;
+}
+
+.arrival-player1-2{
+    display: flex;
+    position: absolute;
+    top: 65px;
+    right: 25px;
+}
+
+.arrival-player1-3{
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+    left: 69px;
+}
+
+.arrival-player1-4{
+    display: flex;
+    position: absolute;
+    top: 65px;
+    left: 25px;
 }
