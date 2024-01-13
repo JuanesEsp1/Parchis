@@ -42,15 +42,19 @@ const startGame = () => {
     localStorage.setItem("positionInitialPlayer1",0);
     localStorage.setItem("positionNowPlayer1",0);
     localStorage.setItem("positionAntPlayer1",0);
+    localStorage.setItem("fieldNowPlayer1",0);
     localStorage.setItem("positionInitialPlayer2",51);
     localStorage.setItem("positionNowPlayer2",0);
     localStorage.setItem("positionAntPlayer2",0);
+    localStorage.setItem("fieldNowPlayer2",0);
     localStorage.setItem("positionInitialPlayer3",34);
     localStorage.setItem("positionNowPlayer3",0);
     localStorage.setItem("positionAntPlayer3",0);
+    localStorage.setItem("fieldNowPlayer3",0);
     localStorage.setItem("positionInitialPlayer4",17);
     localStorage.setItem("positionNowPlayer4",0);
     localStorage.setItem("positionAntPlayer4",0);
+    localStorage.setItem("fieldNowPlayer4",0);
     localStorage.setItem("turn",1);
 }
 
@@ -104,11 +108,11 @@ const turnPlayer1 = () =>{
     $('[player1="'+newPosition+'"]').html(figurePlayer1);
     console.log("==========================");
     console.log("id nueva posicion: "+newPosition);
-    validatePosition(newPosition,1);
-
+    let value = validatePosition(newPosition,1);
+    localStorage.setItem("fieldNowPlayer1",value);
     localStorage.setItem("positionNowPlayer1",newPosition);
+    comparationPlayer1();
     console.log("==========================");  
-
 }
 
 const turnPlayer2 = () =>{
@@ -129,9 +133,10 @@ const turnPlayer2 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player2="'+positionActual+'"]').html('');
     $('[player2="'+newPosition+'"]').html(figurePlayer2);
-    validatePosition(newPosition,2);
-
+    let value = validatePosition(newPosition,2);
+    localStorage.setItem("fieldNowPlayer2",value);
     localStorage.setItem("positionNowPlayer2",newPosition);
+    comparationPlayer2();
     console.log("==========================");
 }
 
@@ -153,9 +158,10 @@ const turnPlayer3 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player3="'+positionActual+'"]').html('');
     $('[player3="'+newPosition+'"]').html(figurePlayer3);
-    validatePosition(newPosition,3);
-
+    let value = validatePosition(newPosition,3);
+    localStorage.setItem("fieldNowPlayer3",value);
     localStorage.setItem("positionNowPlayer3",newPosition);
+    comparationPlayer3();
     console.log("==========================");
 }
 
@@ -177,14 +183,138 @@ const turnPlayer4 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player4="'+positionActual+'"]').html('');
     $('[player4="'+newPosition+'"]').html(figurePlayer4);
-    validatePosition(newPosition,4);
-
+    let value = validatePosition(newPosition,4);
+    localStorage.setItem("fieldNowPlayer4",value);
     localStorage.setItem("positionNowPlayer4",newPosition);
+    comparationPlayer4();
     console.log("==========================");
 }
 
-
 const validatePosition = (newPosition, value) => {
     let id = $('[player'+value+'="'+newPosition+'"]').attr('id');
-    return console.log(id);
+    return id;
 }
+
+const comparationPlayer1 = () => {
+
+    if(localStorage.getItem("fieldNowPlayer1") == localStorage.getItem("fieldNowPlayer2")){
+
+        localStorage.setItem("positionInitialPlayer2",51);
+        localStorage.setItem("positionNowPlayer2",0);
+        localStorage.setItem("positionAntPlayer2",0);
+        localStorage.setItem("fieldNowPlayer2",0);
+        console.log("player1 comio a player2");
+ 
+    }else if(localStorage.getItem("fieldNowPlayer1") == localStorage.getItem("fieldNowPlayer3")){
+
+        localStorage.setItem("positionInitialPlayer3",34);
+        localStorage.setItem("positionNowPlayer3",0);
+        localStorage.setItem("positionAntPlayer3",0);
+        localStorage.setItem("fieldNowPlayer3",0);
+        console.log("player1 comio a player3");
+
+    }else if(localStorage.getItem("fieldNowPlayer1") == localStorage.getItem("fieldNowPlayer4")){
+
+        localStorage.setItem("positionInitialPlayer4",17);
+        localStorage.setItem("positionNowPlayer4",0);
+        localStorage.setItem("positionAntPlayer4",0);
+        localStorage.setItem("fieldNowPlayer4",0);
+        console.log("player1 comio a player4");
+
+    }else{
+
+    }
+}
+
+const comparationPlayer2 = () => {
+
+    if(localStorage.getItem("fieldNowPlayer2") == localStorage.getItem("fieldNowPlayer1")){
+
+        localStorage.setItem("positionInitialPlayer1",0);
+        localStorage.setItem("positionNowPlayer1",0);
+        localStorage.setItem("positionAntPlayer1",0);
+        localStorage.setItem("fieldNowPlayer1",0);
+        console.log("player2 comio a player1");
+ 
+    }else if(localStorage.getItem("fieldNowPlayer2") == localStorage.getItem("fieldNowPlayer3")){
+
+        localStorage.setItem("positionInitialPlayer3",34);
+        localStorage.setItem("positionNowPlayer3",0);
+        localStorage.setItem("positionAntPlayer3",0);
+        localStorage.setItem("fieldNowPlayer3",0);
+        console.log("player2 comio a player3");
+
+    }else if(localStorage.getItem("fieldNowPlayer2") == localStorage.getItem("fieldNowPlayer4")){
+
+        localStorage.setItem("positionInitialPlayer4",17);
+        localStorage.setItem("positionNowPlayer4",0);
+        localStorage.setItem("positionAntPlayer4",0);
+        localStorage.setItem("fieldNowPlayer4",0);
+        console.log("player2 comio a player4");
+
+    }else{
+
+    }
+}
+
+const comparationPlayer3 = () => {
+
+    if(localStorage.getItem("fieldNowPlayer3") == localStorage.getItem("fieldNowPlayer1")){
+
+        localStorage.setItem("positionInitialPlayer1",0);
+        localStorage.setItem("positionNowPlayer1",0);
+        localStorage.setItem("positionAntPlayer1",0);
+        localStorage.setItem("fieldNowPlayer1",0);
+        console.log("player3 comio a player1");
+ 
+    }else if(localStorage.getItem("fieldNowPlayer3") == localStorage.getItem("fieldNowPlayer2")){
+
+        localStorage.setItem("positionInitialPlayer2",51);
+        localStorage.setItem("positionNowPlayer2",0);
+        localStorage.setItem("positionAntPlayer2",0);
+        localStorage.setItem("fieldNowPlayer2",0);
+        console.log("player3 comio a player2");
+
+    }else if(localStorage.getItem("fieldNowPlayer3") == localStorage.getItem("fieldNowPlayer4")){
+
+        localStorage.setItem("positionInitialPlayer4",17);
+        localStorage.setItem("positionNowPlayer4",0);
+        localStorage.setItem("positionAntPlayer4",0);
+        localStorage.setItem("fieldNowPlayer4",0);
+        console.log("player3 comio a player4");
+    }else{
+
+    }
+}
+
+const comparationPlayer4 = () => {
+
+    if(localStorage.getItem("fieldNowPlayer4") == localStorage.getItem("fieldNowPlayer1")){
+
+        localStorage.setItem("positionInitialPlayer1",0);
+        localStorage.setItem("positionNowPlayer1",0);
+        localStorage.setItem("positionAntPlayer1",0);
+        localStorage.setItem("fieldNowPlayer1",0);
+        console.log("player4 comio a player1");
+ 
+    }else if(localStorage.getItem("fieldNowPlayer4") == localStorage.getItem("fieldNowPlayer2")){
+
+        localStorage.setItem("positionInitialPlayer2",51);
+        localStorage.setItem("positionNowPlayer2",0);
+        localStorage.setItem("positionAntPlayer2",0);
+        localStorage.setItem("fieldNowPlayer2",0);
+        console.log("player4 comio a player2");
+
+    }else if(localStorage.getItem("fieldNowPlayer4") == localStorage.getItem("fieldNowPlayer3")){
+
+        localStorage.setItem("positionInitialPlayer3",34);
+        localStorage.setItem("positionNowPlayer3",0);
+        localStorage.setItem("positionAntPlayer3",0);
+        localStorage.setItem("fieldNowPlayer3",0);
+        console.log("player4 comio a player3");
+
+    }else{
+
+    }
+}
+
