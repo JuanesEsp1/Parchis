@@ -21,6 +21,8 @@
 
    </main>
 
+   <audio id="audio" style="display:none" src="assets/audio/SonidoComer.mp3"  ></audio>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>

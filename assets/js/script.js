@@ -204,6 +204,8 @@ const comparationPlayer1 = () => {
         localStorage.setItem("positionAntPlayer2",0);
         localStorage.setItem("fieldNowPlayer2",0);
         console.log("player1 comio a player2");
+        let audio = $("#audio")[0];
+        audio.play();
  
     }else if(localStorage.getItem("fieldNowPlayer1") == localStorage.getItem("fieldNowPlayer3")){
 
@@ -212,6 +214,8 @@ const comparationPlayer1 = () => {
         localStorage.setItem("positionAntPlayer3",0);
         localStorage.setItem("fieldNowPlayer3",0);
         console.log("player1 comio a player3");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else if(localStorage.getItem("fieldNowPlayer1") == localStorage.getItem("fieldNowPlayer4")){
 
@@ -220,6 +224,8 @@ const comparationPlayer1 = () => {
         localStorage.setItem("positionAntPlayer4",0);
         localStorage.setItem("fieldNowPlayer4",0);
         console.log("player1 comio a player4");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else{
 
@@ -235,6 +241,8 @@ const comparationPlayer2 = () => {
         localStorage.setItem("positionAntPlayer1",0);
         localStorage.setItem("fieldNowPlayer1",0);
         console.log("player2 comio a player1");
+        let audio = $("#audio")[0];
+        audio.play();
  
     }else if(localStorage.getItem("fieldNowPlayer2") == localStorage.getItem("fieldNowPlayer3")){
 
@@ -243,6 +251,8 @@ const comparationPlayer2 = () => {
         localStorage.setItem("positionAntPlayer3",0);
         localStorage.setItem("fieldNowPlayer3",0);
         console.log("player2 comio a player3");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else if(localStorage.getItem("fieldNowPlayer2") == localStorage.getItem("fieldNowPlayer4")){
 
@@ -251,6 +261,8 @@ const comparationPlayer2 = () => {
         localStorage.setItem("positionAntPlayer4",0);
         localStorage.setItem("fieldNowPlayer4",0);
         console.log("player2 comio a player4");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else{
 
@@ -266,6 +278,8 @@ const comparationPlayer3 = () => {
         localStorage.setItem("positionAntPlayer1",0);
         localStorage.setItem("fieldNowPlayer1",0);
         console.log("player3 comio a player1");
+        let audio = $("#audio")[0];
+        audio.play();
  
     }else if(localStorage.getItem("fieldNowPlayer3") == localStorage.getItem("fieldNowPlayer2")){
 
@@ -274,6 +288,8 @@ const comparationPlayer3 = () => {
         localStorage.setItem("positionAntPlayer2",0);
         localStorage.setItem("fieldNowPlayer2",0);
         console.log("player3 comio a player2");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else if(localStorage.getItem("fieldNowPlayer3") == localStorage.getItem("fieldNowPlayer4")){
 
@@ -282,6 +298,9 @@ const comparationPlayer3 = () => {
         localStorage.setItem("positionAntPlayer4",0);
         localStorage.setItem("fieldNowPlayer4",0);
         console.log("player3 comio a player4");
+        let audio = $("#audio")[0];
+        audio.play();
+
     }else{
 
     }
@@ -296,6 +315,8 @@ const comparationPlayer4 = () => {
         localStorage.setItem("positionAntPlayer1",0);
         localStorage.setItem("fieldNowPlayer1",0);
         console.log("player4 comio a player1");
+        let audio = $("#audio")[0];
+        audio.play();
  
     }else if(localStorage.getItem("fieldNowPlayer4") == localStorage.getItem("fieldNowPlayer2")){
 
@@ -304,6 +325,8 @@ const comparationPlayer4 = () => {
         localStorage.setItem("positionAntPlayer2",0);
         localStorage.setItem("fieldNowPlayer2",0);
         console.log("player4 comio a player2");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else if(localStorage.getItem("fieldNowPlayer4") == localStorage.getItem("fieldNowPlayer3")){
 
@@ -312,6 +335,8 @@ const comparationPlayer4 = () => {
         localStorage.setItem("positionAntPlayer3",0);
         localStorage.setItem("fieldNowPlayer3",0);
         console.log("player4 comio a player3");
+        let audio = $("#audio")[0];
+        audio.play();
 
     }else{
 
