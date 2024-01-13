@@ -1,8 +1,6 @@
 <div class="spot spot-player1">
     <div class="spot-container">
-        <div class="spot-miniContainer">
             <div class="figurePlayer1"></div>
-        </div>
     </div>
 </div>
 
