@@ -8,6 +8,13 @@ const figurePlayer3 = '<div class="figurePlayer3"></div>';
 const figurePlayer4 = '<div class="figurePlayer4"></div>';
 let valueAnt = 0;
 
+let generalPositio = {
+    payer1: 0,
+    payer2: 0,
+    payer3: 0,
+    payer4: 0,
+}
+
 
 const getNum = ()=>{
     return Math.floor(Math.random()*6)+1;
@@ -95,8 +102,13 @@ const turnPlayer1 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player1="'+positionActual+'"]').html('');
     $('[player1="'+newPosition+'"]').html(figurePlayer1);
+    console.log("==========================");
+    console.log("id nueva posicion: "+newPosition);
+    validatePosition(newPosition,1);
+
     localStorage.setItem("positionNowPlayer1",newPosition);
-    console.log("==========================");    
+    console.log("==========================");  
+
 }
 
 const turnPlayer2 = () =>{
@@ -117,6 +129,8 @@ const turnPlayer2 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player2="'+positionActual+'"]').html('');
     $('[player2="'+newPosition+'"]').html(figurePlayer2);
+    validatePosition(newPosition,2);
+
     localStorage.setItem("positionNowPlayer2",newPosition);
     console.log("==========================");
 }
@@ -139,6 +153,8 @@ const turnPlayer3 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player3="'+positionActual+'"]').html('');
     $('[player3="'+newPosition+'"]').html(figurePlayer3);
+    validatePosition(newPosition,3);
+
     localStorage.setItem("positionNowPlayer3",newPosition);
     console.log("==========================");
 }
@@ -161,6 +177,14 @@ const turnPlayer4 = () =>{
     console.log("nueva posicion: "+newPosition);
     $('[player4="'+positionActual+'"]').html('');
     $('[player4="'+newPosition+'"]').html(figurePlayer4);
+    validatePosition(newPosition,4);
+
     localStorage.setItem("positionNowPlayer4",newPosition);
     console.log("==========================");
+}
+
+
+const validatePosition = (newPosition, value) => {
+    let id = $('[player'+value+'="'+newPosition+'"]').attr('id');
+    return console.log(id);
 }
